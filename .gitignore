@@ -1,0 +1,7 @@
+# Ignore everything by default
+*
+
+# Keep only the files needed for the Edge package
+!.gitignore
+!LICENSE
+!EdgeAdd-ons.png
