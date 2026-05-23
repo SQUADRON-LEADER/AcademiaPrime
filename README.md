@@ -182,3 +182,14 @@ Created by Aayush Kumar.
 This project is licensed under the MIT License. You are free to use, modify, and distribute this software under the terms of the MIT License.
 
 See [LICENSE](LICENSE) for the full license text.
+
+## 🛟 Troubleshooting
+
+If something does not work as expected, start with the page and host:
+
+- Make sure you are on the SRM Academia portal and not a mirrored or cached page.
+- Reload the page after installing or updating the extension so the content scripts can attach cleanly.
+- If Autofill looks inactive, check that you are on the course feedback page before opening the popup.
+- If the timetable or attendance enhancements are missing, refresh the page and give the extension a moment to rebuild its local state.
+
+Most issues come from being on the wrong page, using an outdated tab, or loading the extension before refreshing the portal session.
