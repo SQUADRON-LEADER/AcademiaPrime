@@ -193,3 +193,14 @@ If something does not work as expected, start with the page and host:
 - If the timetable or attendance enhancements are missing, refresh the page and give the extension a moment to rebuild its local state.
 
 Most issues come from being on the wrong page, using an outdated tab, or loading the extension before refreshing the portal session.
+
+## ❓ FAQ
+
+**Does AcademiaPrime require a separate login?**
+No. It works inside your existing SRM Academia session.
+
+**Does it send data to a server?**
+No. The extension processes its logic locally in the browser.
+
+**Can I change the feedback defaults?**
+Yes. Update them in the popup and the extension will remember them for later use.
