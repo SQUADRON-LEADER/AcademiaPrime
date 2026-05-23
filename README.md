@@ -1,4 +1,4 @@
-# AcademiaPrime
+# 🎓 AcademiaPrime
 
 [![Version](https://img.shields.io/badge/version-1.1.0-0f766e?style=for-the-badge)](manifest.json)
 [![License](https://img.shields.io/github/license/SQUADRON-LEADER/AcademiaPrime?style=for-the-badge)](LICENSE)
@@ -6,13 +6,13 @@
 [![Pull Requests](https://img.shields.io/github/issues-pr/SQUADRON-LEADER/AcademiaPrime?style=for-the-badge)](https://github.com/SQUADRON-LEADER/AcademiaPrime/pulls)
 [![Platform](https://img.shields.io/badge/platform-Chrome%20%7C%20Edge-blue?style=for-the-badge)](#installation)
 
-> Skip the Feedback. Track the Margin.
+> 🚀 Skip the Feedback. Track the Margin.
 
 AcademiaPrime is a focused browser extension for SRM Academia that removes repetitive portal work and turns the most important academic information into something easier to act on. It is built for students who want a faster way to submit course feedback, inspect attendance margin, estimate marks, review grade outcomes, and read timetable information without bouncing between spreadsheets or manual calculations.
 
 The extension is designed to run inside your existing SRM Academia session. There is no separate login screen, no external data pipeline, and no background analytics. All core logic executes locally in the browser, using the page the student already opened. That makes the experience predictable, fast, and privacy-conscious.
 
-## What It Does
+## ✨ What It Does
 
 AcademiaPrime is not a general-purpose automation tool. It is intentionally narrow in scope and built around the SRM Academia portal workflow. The current release focuses on four core areas:
 
@@ -23,39 +23,39 @@ AcademiaPrime is not a general-purpose automation tool. It is intentionally narr
 
 The user experience is intentionally minimal. You open the relevant SRM Academia page, use the popup when needed, and let the content scripts enhance the page in place. When the page is not relevant to the current feature, the extension stays out of the way.
 
-## Highlights
+## 🌟 Highlights
 
-- Faster course feedback submission with a visible progress flow and a manual STOP action.
-- Local storage for a default rating and default comment so repeated feedback runs stay consistent.
-- Attendance margin calculation directly inside the attendance page.
-- Grade detail enhancements that show estimated grades and marks-related context.
-- A live CGPA calculator that can be populated from the marks table and updated interactively.
-- Timetable enrichment that resolves batch timetable slots into clearer course labels.
-- A polished popup UI that gives the extension a clean, lightweight control surface.
+- ⚡ Faster course feedback submission with a visible progress flow and a manual STOP action.
+- 💾 Local storage for a default rating and default comment so repeated feedback runs stay consistent.
+- 📊 Attendance margin calculation directly inside the attendance page.
+- 🧾 Grade detail enhancements that show estimated grades and marks-related context.
+- 🧮 A live CGPA calculator that can be populated from the marks table and updated interactively.
+- 🗓️ Timetable enrichment that resolves batch timetable slots into clearer course labels.
+- 🎨 A polished popup UI that gives the extension a clean, lightweight control surface.
 
 ## Feature Breakdown
 
-### Feedback Automation
+### ⚙️ Feedback Automation
 
 The popup lets you choose a course rating and a short comment, then triggers the feedback-filling flow on the SRM Academia feedback page. The extension validates that you are on the correct host and section before it tries to fill anything. During the run, a progress bar and status panel show what is happening, and you can cancel the process if needed.
 
-### Attendance Margin
+### 📈 Attendance Margin
 
 On the attendance page, AcademiaPrime calculates how many classes you can miss or still need to attend to stay at the threshold. The margin is displayed directly inside the table so you do not have to calculate it by hand. Positive, zero, and negative states are visually differentiated.
 
-### Grade and Marks Helpers
+### 🧠 Grade and Marks Helpers
 
 The extension adds richer grade context to the marks and results pages. It can estimate grades, display marks lost, and show the approximate marks required to target a higher outcome. This is meant to reduce guesswork before assessments and make the numbers easier to compare at a glance.
 
-### CGPA Calculator
+### 🧮 CGPA Calculator
 
 AcademiaPrime includes a live CGPA calculator that can be filled from the page’s subject and marks data. It is designed to be interactive, so you can adjust grade assumptions and see the effect immediately instead of recomputing everything by hand.
 
-### Timetable Enhancement
+### 🗓️ Timetable Enhancement
 
 When you open the timetable page, the extension builds a local course catalog from the page’s course table and uses it to decorate timetable cells with course names and clearer labels. That makes batch timetables easier to scan and reduces the need to decode slot tokens repeatedly.
 
-## Installation
+## 🛠️ Installation
 
 ### Chrome or Chromium-based browsers
 
@@ -75,9 +75,9 @@ When you open the timetable page, the extension builds a local course catalog fr
 
 No package installation step is required. The extension is a plain browser extension project with its runtime behavior defined by the manifest and source files in this repository.
 
-## How To Use
+## 📘 How To Use
 
-### Feedback Page
+### ✍️ Feedback Page
 
 1. Open the SRM Academia feedback page.
 2. Click the extension icon.
@@ -86,19 +86,19 @@ No package installation step is required. The extension is a plain browser exten
 5. Watch the progress bar until the form is completed.
 6. Use Stop if you need to cancel the automation mid-run.
 
-### Attendance Page
+### 🪪 Attendance Page
 
 Open the attendance page and let the content script enhance the table. The margin column is added automatically, so the key attendance numbers are visible without manual calculations.
 
-### Grades and Marks Pages
+### 📚 Grades and Marks Pages
 
 Open the relevant results or marks page inside SRM Academia. AcademiaPrime enhances the tables with grade context, marks-loss information, and CGPA calculation helpers where the portal data is available.
 
-### Timetable Page
+### 🗓️ Timetable Page
 
 Visit the timetable page and let the extension resolve slot codes into course titles. It stores a local catalog in browser storage so the timetable remains easier to read across sessions.
 
-## Privacy And Permissions
+## 🔒 Privacy And Permissions
 
 AcademiaPrime is built to stay narrow and local.
 
@@ -109,7 +109,7 @@ AcademiaPrime is built to stay narrow and local.
 
 The privacy policy is included in the repository and published here: [Privacy Policy](privacy-policy.html).
 
-## Project Structure
+## 🧱 Project Structure
 
 ```text
 .
@@ -129,7 +129,7 @@ The privacy policy is included in the repository and published here: [Privacy Po
 └── icons/
 ```
 
-## Development Notes
+## 🧰 Development Notes
 
 The architecture is split into three layers:
 
@@ -140,7 +140,7 @@ The architecture is split into three layers:
 
 If you are changing behavior, update the popup and content logic together so the UI and the page behavior stay aligned. If you are changing permissions or host access, update the manifest and the documentation together so the store-facing story remains accurate.
 
-## Verification Checklist
+## ✅ Verification Checklist
 
 Before shipping an update, it is worth checking the following on a live SRM Academia session:
 
@@ -150,14 +150,14 @@ Before shipping an update, it is worth checking the following on a live SRM Acad
 - The attendance margin column appears on the attendance page.
 - The timetable page resolves slots into readable course names.
 
-## Certification Notes
+## 📝 Certification Notes
 
 This extension is intended for SRM Academia users only. Its scope is intentionally narrow, and the code in this repository is designed to run locally in the browser on the declared host. It does not request unrelated site access and does not depend on remotely loaded executable code.
 
-## Credits
+## 🙌 Credits
 
 Created by Aayush Kumar.
 
-## License
+## 📄 License
 
 Released under the MIT License. See [LICENSE](LICENSE) for details.
