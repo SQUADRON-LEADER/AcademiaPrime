@@ -161,6 +161,6 @@ Created by Aayush Kumar.
 
 ## 📄 License
 
-[![MIT License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
+This project is licensed under the MIT License. You are free to use, modify, and distribute this software under the terms of the MIT License.
 
-This project is released under the MIT License. See [LICENSE](LICENSE) for the full terms.
+See [LICENSE](LICENSE) for the full license text.
