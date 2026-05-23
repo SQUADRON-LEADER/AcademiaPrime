@@ -1,54 +1,163 @@
-<!-- AcademiaPrime Banner -->
-<img src="https://github.com/AayushKumar/AcademiaPrime/blob/main/Github%20Preview.png" alt="AcademiaPrime Preview" width="100%">
+# AcademiaPrime
 
-## 🎓 AcademiaPrime
+[![Version](https://img.shields.io/badge/version-1.1.0-0f766e?style=for-the-badge)](manifest.json)
+[![License](https://img.shields.io/github/license/SQUADRON-LEADER/AcademiaPrime?style=for-the-badge)](LICENSE)
+[![Issues](https://img.shields.io/github/issues/SQUADRON-LEADER/AcademiaPrime?style=for-the-badge)](https://github.com/SQUADRON-LEADER/AcademiaPrime/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/SQUADRON-LEADER/AcademiaPrime?style=for-the-badge)](https://github.com/SQUADRON-LEADER/AcademiaPrime/pulls)
+[![Platform](https://img.shields.io/badge/platform-Chrome%20%7C%20Edge-blue?style=for-the-badge)](#installation)
 
-AcademiaPrime enhances the SRM Academia experience with automation, smarter insights, and a clean, minimal UI.
+> Skip the Feedback. Track the Margin.
 
-## Description
+AcademiaPrime is a focused browser extension for SRM Academia that removes repetitive portal work and turns the most important academic information into something easier to act on. It is built for students who want a faster way to submit course feedback, inspect attendance margin, estimate marks, review grade outcomes, and read timetable information without bouncing between spreadsheets or manual calculations.
 
-AcademiaPrime is a lightweight browser extension built to improve the SRM Academia experience for students who want faster workflows and clearer academic insight. Instead of switching between spreadsheets, calculators, and manual form inputs, the extension brings the most useful actions into a single, polished interface inside the browser. It can automate repetitive feedback submission, helping users complete course evaluations quickly while keeping control over default values. It also provides academic tools for understanding grades, margins, and CGPA outcomes so students can make informed decisions before deadlines or assessments. The extension is designed to work with the user’s existing SRM Academia session, which means there is no separate login flow and no need to hand over credentials. All calculations run locally in the browser, and the project avoids analytics or background tracking. That keeps the experience simple, private, and predictable. AcademiaPrime also focuses on usability: the interface is minimal, responsive, and easy to navigate, with clear visual cues for progress and performance. Whether the goal is to save time, estimate required marks, or restore a timetable-driven view of credits, AcademiaPrime aims to reduce friction and make the portal feel more manageable. It is a practical companion for everyday academic tasks. For students balancing classes, assignments, and attendance thresholds, the extension reduces repetitive portal work and makes key academic numbers easier to understand at a glance. Its straightforward layout keeps the learning curve low, so users can spend less time navigating the portal and more time acting on useful information each day.
+The extension is designed to run inside your existing SRM Academia session. There is no separate login screen, no external data pipeline, and no background analytics. All core logic executes locally in the browser, using the page the student already opened. That makes the experience predictable, fast, and privacy-conscious.
+
+## What It Does
+
+AcademiaPrime is not a general-purpose automation tool. It is intentionally narrow in scope and built around the SRM Academia portal workflow. The current release focuses on four core areas:
+
+1. Feedback automation for the course feedback page.
+2. Academic insight overlays for grades, marks, and attendance margin.
+3. Timetable enhancement that maps slot codes to course names.
+4. Local preference storage so repeated tasks do not need to be reconfigured every time.
+
+The user experience is intentionally minimal. You open the relevant SRM Academia page, use the popup when needed, and let the content scripts enhance the page in place. When the page is not relevant to the current feature, the extension stays out of the way.
+
+## Highlights
+
+- Faster course feedback submission with a visible progress flow and a manual STOP action.
+- Local storage for a default rating and default comment so repeated feedback runs stay consistent.
+- Attendance margin calculation directly inside the attendance page.
+- Grade detail enhancements that show estimated grades and marks-related context.
+- A live CGPA calculator that can be populated from the marks table and updated interactively.
+- Timetable enrichment that resolves batch timetable slots into clearer course labels.
+- A polished popup UI that gives the extension a clean, lightweight control surface.
+
+## Feature Breakdown
+
+### Feedback Automation
+
+The popup lets you choose a course rating and a short comment, then triggers the feedback-filling flow on the SRM Academia feedback page. The extension validates that you are on the correct host and section before it tries to fill anything. During the run, a progress bar and status panel show what is happening, and you can cancel the process if needed.
+
+### Attendance Margin
+
+On the attendance page, AcademiaPrime calculates how many classes you can miss or still need to attend to stay at the threshold. The margin is displayed directly inside the table so you do not have to calculate it by hand. Positive, zero, and negative states are visually differentiated.
+
+### Grade and Marks Helpers
+
+The extension adds richer grade context to the marks and results pages. It can estimate grades, display marks lost, and show the approximate marks required to target a higher outcome. This is meant to reduce guesswork before assessments and make the numbers easier to compare at a glance.
+
+### CGPA Calculator
+
+AcademiaPrime includes a live CGPA calculator that can be filled from the page’s subject and marks data. It is designed to be interactive, so you can adjust grade assumptions and see the effect immediately instead of recomputing everything by hand.
+
+### Timetable Enhancement
+
+When you open the timetable page, the extension builds a local course catalog from the page’s course table and uses it to decorate timetable cells with course names and clearer labels. That makes batch timetables easier to scan and reduces the need to decode slot tokens repeatedly.
+
+## Installation
+
+### Chrome or Chromium-based browsers
+
+1. Download or clone this repository.
+2. Open your browser’s extensions page.
+3. Enable Developer mode.
+4. Choose Load unpacked.
+5. Select the repository root folder, not a nested subfolder.
+
+### Microsoft Edge
+
+1. Download or clone this repository.
+2. Open `edge://extensions`.
+3. Enable Developer mode.
+4. Choose Load unpacked.
+5. Select the repository root folder.
+
+No package installation step is required. The extension is a plain browser extension project with its runtime behavior defined by the manifest and source files in this repository.
+
+## How To Use
+
+### Feedback Page
+
+1. Open the SRM Academia feedback page.
+2. Click the extension icon.
+3. Select a rating and set a comment if you want something different from the saved default.
+4. Click Autofill.
+5. Watch the progress bar until the form is completed.
+6. Use Stop if you need to cancel the automation mid-run.
+
+### Attendance Page
+
+Open the attendance page and let the content script enhance the table. The margin column is added automatically, so the key attendance numbers are visible without manual calculations.
+
+### Grades and Marks Pages
+
+Open the relevant results or marks page inside SRM Academia. AcademiaPrime enhances the tables with grade context, marks-loss information, and CGPA calculation helpers where the portal data is available.
+
+### Timetable Page
+
+Visit the timetable page and let the extension resolve slot codes into course titles. It stores a local catalog in browser storage so the timetable remains easier to read across sessions.
+
+## Privacy And Permissions
+
+AcademiaPrime is built to stay narrow and local.
+
+- `storage` is used to remember user preferences such as the saved rating and comment.
+- `activeTab` and `scripting` are used so the extension can run its own scripts on the page the user already opened.
+- Host access is limited to `https://academia.srmist.edu.in/*`.
+- The extension does not rely on remote JavaScript, does not use analytics, and does not send portal data to external servers.
+
+The privacy policy is included in the repository and published here: [Privacy Policy](privacy-policy.html).
+
+## Project Structure
+
+```text
+.
+├── manifest.json
+├── privacy-policy.html
+├── src/
+│   ├── background.js
+│   ├── content/
+│   │   ├── content.js
+│   │   └── main.js
+│   ├── injected/
+│   │   └── automator.js
+│   └── popup/
+│       ├── popup.html
+│       ├── popup.css
+│       └── popup.js
+└── icons/
+```
+
+## Development Notes
+
+The architecture is split into three layers:
+
+- `src/popup/` contains the popup UI and its interaction logic.
+- `src/content/` contains the content scripts that run on the SRM Academia pages.
+- `src/injected/` contains page-world helpers used when the extension needs direct access to the portal’s page context.
+- `src/background.js` acts as the service worker that coordinates messaging and injection.
+
+If you are changing behavior, update the popup and content logic together so the UI and the page behavior stay aligned. If you are changing permissions or host access, update the manifest and the documentation together so the store-facing story remains accurate.
+
+## Verification Checklist
+
+Before shipping an update, it is worth checking the following on a live SRM Academia session:
+
+- The popup opens and stores the selected feedback defaults.
+- Autofill only activates on the correct feedback page.
+- The STOP button cancels a fill in progress.
+- The attendance margin column appears on the attendance page.
+- The timetable page resolves slots into readable course names.
 
 ## Certification Notes
 
-AcademiaPrime is a browser extension for SRM Academia users only. It requests the minimum permissions needed to run its features: storage for saving user preferences, scripting and activeTab for injecting automation on pages the user already opens, and host access limited to the SRM Academia domain. The extension does not collect personal data, does not use analytics, does not send portal information to external servers, and does not require a separate login. All calculations and feedback-related actions run locally in the browser on the user’s existing session. The privacy policy is included in the repository and published alongside the extension package for review. The project is intended to reduce repetitive manual work and provide clearer academic insight without changing account credentials or accessing unrelated sites.
+This extension is intended for SRM Academia users only. Its scope is intentionally narrow, and the code in this repository is designed to run locally in the browser on the declared host. It does not request unrelated site access and does not depend on remotely loaded executable code.
 
----
+## Credits
 
----
+Created by Aayush Kumar.
 
-### ✨ Features
+## License
 
-- **🚀 Smart Auto Feedback**
-  - Fill all course feedback forms in seconds
-  - Customizable default ratings and comments
-
-- **📊 Advanced Academic Insights**
-  - **Interactive CGPA Calculator**: Live GPA prediction based on estimated grades
-  - **Marks & Margin Analysis**: Visual indicators for attendance safety
-  - **Grade Forecasting**: See exactly what marks you need to hit your target grade (e.g., O, A+, A)
-  - **Marks Lost Tracker**: Real-time calculation of internal marks lost
-
-- **🔄 Dynamic Syncing**
-  - **Future-Proof Timetable Sync**: Automatically fetches credits regardless of the academic year (2024, 2025, 2031, etc.)
-  - One-click credit restoration from the portal
-
-- **🎨 Premium UI Overhaul**
-  - Clean, minimalist Dashboard-style layout
-  - Elegant indigo-themed identity banners
-  - Typography powered by **Plus Jakarta Sans**
-
-- **🛡️ Privacy & Security**
-  - **No Login Required**: Works entirely on your existing session
-  - **Zero Tracking**: No analytics, no data collection
-  - **Local Processing**: All calculations happen in your browser
-
----
-
-## 🔏 Privacy Policy
-
-AcademiaPrime is privacy-friendly. Learn more in our [Privacy Policy](https://aayushkumar.github.io/AcademiaPrime/privacy-policy.html)
-
----
-
-> _Skip the Feedback. Track the Margin._
+Released under the MIT License. See [LICENSE](LICENSE) for details.
