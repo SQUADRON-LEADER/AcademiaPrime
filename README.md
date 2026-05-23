@@ -13,6 +13,12 @@ AcademiaPrime is a focused browser extension for SRM Academia that removes repet
 
 The extension is designed to run inside your existing SRM Academia session. There is no separate login screen, no external data pipeline, and no background analytics. All core logic executes locally in the browser, using the page the student already opened. That makes the experience predictable, fast, and privacy-conscious.
 
+## 🎯 Why It Exists
+
+SRM Academia contains a lot of useful information, but the workflow is scattered across multiple pages and repeated manual steps. AcademiaPrime exists to reduce that friction. Instead of forcing students to re-enter the same feedback choices, calculate attendance margins by hand, or decode timetable slots every time, the extension keeps the important actions close to the portal and removes the repetitive parts.
+
+This is especially useful near deadlines, when time matters and small errors become expensive. A narrow tool that handles the repetitive steps cleanly is more valuable here than a broad dashboard that tries to do everything at once.
+
 ## ✨ What It Does
 
 AcademiaPrime is not a general-purpose automation tool. It is intentionally narrow in scope and built around the SRM Academia portal workflow. The current release focuses on four core areas:
