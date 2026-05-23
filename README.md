@@ -4,6 +4,7 @@
 [![License](https://img.shields.io/github/license/SQUADRON-LEADER/AcademiaPrime?style=for-the-badge)](LICENSE)
 [![Issues](https://img.shields.io/github/issues/SQUADRON-LEADER/AcademiaPrime?style=for-the-badge)](https://github.com/SQUADRON-LEADER/AcademiaPrime/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/SQUADRON-LEADER/AcademiaPrime?style=for-the-badge)](https://github.com/SQUADRON-LEADER/AcademiaPrime/pulls)
+[![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Chrome%20%7C%20Edge-blue?style=for-the-badge)](#installation)
 
 > 🚀 Skip the Feedback. Track the Margin.
@@ -160,4 +161,4 @@ Created by Aayush Kumar.
 
 ## 📄 License
 
-Released under the MIT License. See [LICENSE](LICENSE) for details.
+Released under the MIT License. See [LICENSE](LICENSE) for the full terms.
