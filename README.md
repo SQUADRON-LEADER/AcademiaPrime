@@ -82,6 +82,12 @@ When you open the timetable page, the extension builds a local course catalog fr
 
 No package installation step is required. The extension is a plain browser extension project with its runtime behavior defined by the manifest and source files in this repository.
 
+## 🧭 Compatibility
+
+AcademiaPrime is built for Chromium-based browsers that support Manifest V3, including Google Chrome and Microsoft Edge. The extension is scoped to the SRM Academia portal at `https://academia.srmist.edu.in/*`, and its content scripts are written around that site’s structure.
+
+If the portal markup changes, some page-specific enhancements may need a small update. That is intentional: the project is optimized for a single academic workflow rather than a generic browser-wide automation layer.
+
 ## 📘 How To Use
 
 ### ✍️ Feedback Page
