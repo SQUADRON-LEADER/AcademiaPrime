@@ -111,6 +111,12 @@ Open the relevant results or marks page inside SRM Academia. AcademiaPrime enhan
 
 Visit the timetable page and let the extension resolve slot codes into course titles. It stores a local catalog in browser storage so the timetable remains easier to read across sessions.
 
+## ⚙️ Configuration
+
+The popup stores the last selected feedback rating and comment in browser storage so the next run can reuse them. On install, the extension starts with an `Excellent` rating and a `Good` comment as the default values.
+
+If you want a different baseline, simply change the values in the popup once and the extension will remember them locally for future runs.
+
 ## 🔒 Privacy And Permissions
 
 AcademiaPrime is built to stay narrow and local.
