@@ -8,6 +8,8 @@
 [![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Chrome%20%7C%20Edge-blue?style=for-the-badge)](#installation)
 
+https://github.com/user-attachments/assets/0b0b3129-1109-4a0b-8bfe-8c5580500c86
+
 > 🚀 Skip the Feedback. Track the Margin.
 
 AcademiaPrime is a focused browser extension for SRM Academia that removes repetitive portal work and turns the most important academic information into something easier to act on. It is built for students who want a faster way to submit course feedback, inspect attendance margin, estimate marks, review grade outcomes, and read timetable information without bouncing between spreadsheets or manual calculations.
