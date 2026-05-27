@@ -1,4 +1,5 @@
 # 🎓 AcademiaPrime
+<img width="1536" height="1024" alt="WhatsApp Image 2026-05-13 at 22 35 10" src="https://github.com/user-attachments/assets/c413bee5-6f46-4264-b671-67c52c74c531" />
 
 [![Version](https://img.shields.io/badge/version-1.1.0-0f766e?style=for-the-badge)](manifest.json)
 [![License](https://img.shields.io/github/license/SQUADRON-LEADER/AcademiaPrime?style=for-the-badge)](LICENSE)
